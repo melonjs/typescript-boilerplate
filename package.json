@@ -19,7 +19,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@melonjs/debug-plugin": "^14.5.2",
+    "@melonjs/debug-plugin": "^14.6.2",
     "melonjs": "^15.1.6"
   },
   "type": "module"
