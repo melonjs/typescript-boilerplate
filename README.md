@@ -60,7 +60,7 @@ public
   - the root folder for your game source code
   - The entry file is [index.ts](src/index.ts).
   - [index.css](src/index.css) and [index.html](src/index.html) are default templates that can be customized
-  - [manifest.ts](src/manifest.ts) is a list of asset to be preloaded by melonJS (these won't be automatically imported and bundled by webpack)
+  - [manifest.ts](src/manifest.ts) is a list of asset to be preloaded by melonJS
 - `src/scripts`
   - add your source classes here
 - `src/data`
@@ -79,7 +79,7 @@ Questions, need help ?
 -------------------------------------------------------------------------------
 If you need technical support, you can contact us through the following channels :
 * Forums: with melonJS 2 we moved to a new discourse [forum](https://melonjs.discourse.group), but we can still also find the previous one [here](http://www.html5gamedevs.com/forum/32-melonjs/)
-* Chat: come and chat with us on [discord](https://discord.gg/aur7JMk), or [gitter](https://gitter.im/melonjs/public)
+* Chat: come and chat with us on [discord](https://discord.gg/aur7JMk)
 * we tried to keep our [wikipage](https://github.com/melonjs/melonJS/wiki) up-to-date with useful links, tutorials, and anything related melonJS.
 
 
