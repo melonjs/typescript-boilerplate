@@ -1,6 +1,6 @@
 {
   "name": "melonjs-typescript-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.ts",
   "author": "Olivier Biot",
   "license": "MIT",
@@ -19,8 +19,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@melonjs/debug-plugin": "^14.6.2",
-    "melonjs": "^15.1.6"
+    "@melonjs/debug-plugin": "^14.6.4",
+    "melonjs": "^15.2.0"
   },
   "type": "module"
 }

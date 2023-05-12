@@ -34,7 +34,6 @@ device.onReady(() => {
 
     // initialize the debug plugin in development mode.
     if (process.env.NODE_ENV === 'development') {
-        // @ts-ignore debug - Could not find a declaration file for module '@melonjs/debug-plugin'
         import("@melonjs/debug-plugin").then((debugPlugin) => {
             // automatically register the debug panel
            plugin.register(debugPlugin.DebugPanelPlugin, "debugPanel");
