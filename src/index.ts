@@ -1,20 +1,7 @@
-import {
-    audio,
-    loader,
-    state,
-    device,
-    video,
-    utils,
-    plugin,
-    pool
-} from 'melonjs';
-
-import clases from './index.css?inline'
-
+import { audio, loader, state, device, video, plugin, pool } from 'melonjs';
 import TitleScreen from './scripts/stage/title.js';
 import PlayScreen from './scripts/stage/play.js';
 import PlayerEntity from './scripts/renderables/player.js';
-
 import DataManifest from './manifest.js';
 
 

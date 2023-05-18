@@ -1,16 +1,16 @@
 {
   "name": "melonjs-typescript-boilerplate",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "src/index.ts",
   "author": "Olivier Biot",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.1.1",
+    "@types/node": "^20.2.0",
     "typescript": "^5.0.4",
-    "vite": "^4.3.1",
+    "vite": "^4.3.7",
     "vite-plugin-favicons-inject": "^2.2.0",
     "vite-plugin-html": "^3.2.0",
-    "vite-plugin-static-copy": "^0.14.0"
+    "vite-plugin-static-copy": "^0.15.0"
   },
   "browserslist": "defaults",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@melonjs/debug-plugin": "^14.6.4",
-    "melonjs": "^15.2.0"
+    "melonjs": "^15.2.1"
   },
   "type": "module"
 }
