@@ -5,12 +5,12 @@
   "author": "Olivier Biot",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.2.0",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.7",
+    "@types/node": "^20.3.1",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
     "vite-plugin-favicons-inject": "^2.2.0",
     "vite-plugin-html": "^3.2.0",
-    "vite-plugin-static-copy": "^0.15.0"
+    "vite-plugin-static-copy": "^0.16.0"
   },
   "browserslist": "defaults",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@melonjs/debug-plugin": "^14.6.4",
-    "melonjs": "^15.2.1"
+    "melonjs": "^15.4.1"
   },
   "type": "module"
 }
