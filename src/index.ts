@@ -3,7 +3,7 @@ import TitleScreen from "./scripts/stage/title.js";
 import PlayScreen from "./scripts/stage/play.js";
 import PlayerEntity from "./scripts/renderables/player.js";
 import DataManifest from "./manifest.js";
-
+import "./index.scss"
 
 device.onReady(() => {
 
