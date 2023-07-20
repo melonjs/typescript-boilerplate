@@ -1,17 +1,17 @@
-import { defineConfig } from 'vite';
-import vitePluginFaviconsInject from 'vite-plugin-favicons-inject';
+import { defineConfig } from "vite";
+import vitePluginFaviconsInject from "vite-plugin-favicons-inject";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
-  root: '',
+  root: "",
   build: {
     // Relative to the root
-    outDir: 'public',
-    assetsDir: 'build',
-    target: 'es2015'
+    outDir: "public",
+    assetsDir: "build",
+    target: "es2015"
   },
   plugins: [
-    vitePluginFaviconsInject('./src/favicon/logo.png'),
+    vitePluginFaviconsInject("./src/favicon/logo.png"),
     viteStaticCopy({
       targets: [
         {
