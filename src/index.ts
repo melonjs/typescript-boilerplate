@@ -17,7 +17,7 @@ device.onReady(() => {
     audio.init("mp3,ogg");
 
     // allow cross-origin for image/texture loading
-    loader.crossOrigin = "anonymous";
+    loader.setOptions({crossOrigin: "anonymous"});
 
     // initialize the debug plugin in development mode.
     if (process.env.NODE_ENV === 'development') {
