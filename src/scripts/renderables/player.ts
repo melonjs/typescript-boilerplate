@@ -1,13 +1,13 @@
-import { Entity } from "melonjs";
+import { Sprite } from "melonjs";
 
-class PlayerEntity extends Entity {
+class PlayerEntity extends Sprite {
 
     /**
      * constructor
      */
-    constructor(x: number, y: number, settings: any) {
+    constructor(x: number, y: number, settings: object) {
         // call the parent constructor
-        super(x, y , settings);
+        super(x, y, settings);
     }
 
     /**
@@ -15,19 +15,19 @@ class PlayerEntity extends Entity {
      */
     update(dt: number) {
         // change body force based on inputs
-        //....
+        // ...
         // call the parent method
         return super.update(dt);
     }
 
-   /**
-     * colision handler
+    /**
+     * collision handler
      * (called when colliding with other objects)
      */
-    onCollision(response: any, other: any) {
+    onCollision() {
         // Make all other objects solid
         return true;
     }
-};
+}
 
 export default PlayerEntity;

@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import vitePluginFaviconsInject from "vite-plugin-favicons-inject";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
@@ -7,12 +6,10 @@ export default defineConfig({
   build: {
     assetsDir: "assets",
     emptyOutDir: true,
-    manifest: true,
-    outDir: "public",
-    target: "es2015"
+    outDir: "dist",
+    target: "esnext"
   },
   plugins: [
-    vitePluginFaviconsInject("./src/favicon/logo.png"),
     viteStaticCopy({
       targets: [
         {

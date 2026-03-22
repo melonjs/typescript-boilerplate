@@ -1,9 +1,9 @@
 import { audio, loader, state, device, video, plugin, pool } from "melonjs";
-import TitleScreen from "./scripts/stage/title.js";
-import PlayScreen from "./scripts/stage/play.js";
-import PlayerEntity from "./scripts/renderables/player.js";
-import DataManifest from "./manifest.js";
-import "./index.scss"
+import TitleScreen from "./scripts/stage/title";
+import PlayScreen from "./scripts/stage/play";
+import PlayerEntity from "./scripts/renderables/player";
+import DataManifest from "./manifest";
+import "./index.css";
 
 device.onReady(() => {
 
@@ -13,22 +13,21 @@ device.onReady(() => {
         return;
     }
 
-    // Initialize the audio.
+    // initialize the audio
     audio.init("mp3,ogg");
 
     // allow cross-origin for image/texture loading
     loader.setOptions({crossOrigin: "anonymous"});
 
-    // initialize the debug plugin in development mode.
-    if (process.env.NODE_ENV === 'development') {
+    // initialize the debug plugin in development mode
+    if (import.meta.env.DEV) {
         import("@melonjs/debug-plugin").then((debugPlugin) => {
-            // automatically register the debug panel
-           plugin.register(debugPlugin.DebugPanelPlugin, "debugPanel");
+            plugin.register(debugPlugin.DebugPanelPlugin, "debugPanel");
         });
     }
 
-    // set and load all resources.
-    loader.preload(DataManifest, function() {
+    // set and load all resources
+    loader.preload(DataManifest, () => {
         // set the user defined game stages
         state.set(state.MENU, new TitleScreen());
         state.set(state.PLAY, new PlayScreen());
@@ -36,7 +35,7 @@ device.onReady(() => {
         // add our player entity in the entity pool
         pool.register("mainPlayer", PlayerEntity);
 
-        // Start the game.
+        // start the game
         state.change(state.PLAY, false);
     });
 });
