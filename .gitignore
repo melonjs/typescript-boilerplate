@@ -1,4 +1,7 @@
 node_modules/
 dist/
+dist-electron/
+release/
+public/
 .DS_Store
 package-lock.json

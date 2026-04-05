@@ -7,7 +7,7 @@ import "./index.css";
 
 // create a new melonJS Application
 const app = new Application(1218, 562, {
-    parent: "screen",
+    parent: "screen" as unknown as HTMLElement,
     scale: "auto",
 });
 

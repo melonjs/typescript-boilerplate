@@ -5,7 +5,7 @@ class PlayerEntity extends Sprite {
     /**
      * constructor
      */
-    constructor(x: number, y: number, settings: object) {
+    constructor(x: number, y: number, settings: { image: string; [key: string]: unknown }) {
         // call the parent constructor
         super(x, y, settings);
     }
