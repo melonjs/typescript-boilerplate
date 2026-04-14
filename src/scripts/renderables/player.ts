@@ -13,7 +13,7 @@ class PlayerEntity extends Sprite {
     /**
      * update the entity
      */
-    update(dt: number) {
+    override update(dt: number) {
         // change body force based on inputs
         // ...
         // call the parent method
@@ -24,7 +24,7 @@ class PlayerEntity extends Sprite {
      * collision handler
      * (called when colliding with other objects)
      */
-    onCollision() {
+    override onCollision() {
         // Make all other objects solid
         return true;
     }
