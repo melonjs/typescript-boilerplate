@@ -11,6 +11,11 @@ const app = new Application(1218, 562, {
     scale: "auto",
 });
 
+// mandatory since melonJS 20.0: this is what builds the renderer and adds
+// the canvas to the page. It is asynchronous so a WebGPU device can be
+// acquired, and resolves without suspending on the WebGL and Canvas backends.
+await app.init();
+
 // initialize the audio
 audio.init("mp3,ogg");
 

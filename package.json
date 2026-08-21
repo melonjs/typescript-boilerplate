@@ -25,10 +25,10 @@
     }
   },
   "dependencies": {
-    "melonjs": "^19.0.0"
+    "melonjs": "^20.0.0"
   },
   "devDependencies": {
-    "@melonjs/debug-plugin": "^15.0.3",
+    "@melonjs/debug-plugin": "^16.1.1",
     "electron": "^41.2.0",
     "electron-builder": "^26.8.1",
     "typescript": "^6.0.2",
